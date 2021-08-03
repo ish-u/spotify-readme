@@ -60,14 +60,14 @@ app.get("/nowPlaying/text", async (req, res) => {
         });
 
         svg = `
-          <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" style="color:white;">
             <text y="32" style="font: bold 20px sans-serif;">${name}</text>
             <text y="52" style="font: 14px sans-serif;">${artists.toString()}</text>
           </svg>
           `;
       } else {
         svg = `
-        <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" style="color:white;">
           <text y="32" style="font: bold 20px sans-serif;">Nothing...</text>
         </svg>
         `;
